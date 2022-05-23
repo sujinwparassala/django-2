@@ -1,0 +1,42 @@
+<html>
+
+{%extends fifthApp/base.html'%}
+{%block content%}
+
+<h1>student details</h1>
+
+<table>
+<thead>
+<th> slno</th>
+<th> section</th>
+<th> order</th>
+<th> amount</th>
+</thead>
+<tr>
+{% for st in student %}
+<td>{{st.slno}}</td>
+<td>{{section}}</td>
+<td>{{order}}</td>
+<td>{{amount}}</td>
+</tr>
+
+(%endfor %}
+
+</table>
+<head>
+
+</head>
+<body>
+<h1>hello world your cookies count is:{{count}}</h1>
+
+{{student}}
+{%load static %}
+
+
+
+
+
+
+</body>
+
+/html>
